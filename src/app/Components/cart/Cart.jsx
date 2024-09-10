@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Cart() {
   const { cartItems, removeFromCart, getTotalPrice } = useCart();
 
-  // Log cart items to verify they're passed to the component
+  // Log cart items to verify they're passed to the components
   console.log("Cart Items in UI:", cartItems);
 
   return (
