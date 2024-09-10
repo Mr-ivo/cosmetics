@@ -8,7 +8,7 @@ export function CartProvider({ children }) {
 
   const addToCart = (product) => {
     setCartItems((prevItems) => [...prevItems, product]);
-    console.log("Cart Items: ", cartItems); // Ensure cart items are being logged when added
+    console.log("Cart Items: ", cartItems); // Ensure cart items are being logged when addeds
   };
 
   const removeFromCart = (id) => {
