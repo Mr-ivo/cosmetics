@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import styles from '../shop/page.module.css';
 import { useCart } from '../context/CartContext';
+import BackToTopButton from '../BackToTop/BackToTOP';
 
 export default function Shop() {
   const { addToCart } = useCart();
@@ -59,6 +60,7 @@ export default function Shop() {
           ))}
         </div>
       </div>
+      <BackToTopButton />
 
       {/* Shopping Benefits */}
       <div className={styles.benefits}>
