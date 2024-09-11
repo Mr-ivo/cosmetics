@@ -6,6 +6,7 @@
     text-align: center;
     margin-top: 40px;
     background-color: #f9f9f9;
+    font-family: "poppins";
   }
   
   .shopTitle {
@@ -17,8 +18,9 @@
   }
   
   .shopDescription {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 40px;
+    font-family: "poppins";
     color: #7f8c8d;
     max-width: 800px;
     margin: 0 auto;
@@ -123,6 +125,7 @@
   }
   .all{
     color:#007bff;
+    font-family: "poppins";
     padding: 10px;
     /* font-size: 30%; */
   }

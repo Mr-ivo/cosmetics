@@ -56,7 +56,7 @@ function Overview() {
       <h2>Overview</h2>
       <p>Welcome to your dashboard. Here you can monitor and manage various aspects of your store.</p>
       <ul>
-        <li>Total Sales: $45,000</li>
+        <li>Total Sales: CAF45,000</li>
         <li>Total Orders: 1,230</li>
         <li>Total Customers: 980</li>
       </ul>
@@ -72,7 +72,7 @@ function Analytics() {
       <ul>
         <li>Daily Visitors: 1,000</li>
         <li>Bounce Rate: 35%</li>
-        <li>Average Order Value: $50</li>
+        <li>Average Order Value: CAF50</li>
       </ul>
     </div>
   );
