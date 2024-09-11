@@ -84,8 +84,8 @@ export default function Page() {
       {/* Promotions Section */}
       <section className={styles.promotions}>
         <Slider {...sliderSettings} className={styles.imageGrid}>
-          {products.map((product) => (
-            <div key={product.id} className={styles.promotion}>
+          {products.map((product,index) => (
+            <div key={index} className={styles.promotion}>
               <Image
                 className={styles.img}
                 src={product.image}
@@ -110,8 +110,8 @@ export default function Page() {
           {/* Best Seller Section */}
           <div className={styles.productSection}>
             <h2>Best Seller</h2>
-          {products.map((product) => (
-            <div className={styles.productCard}>
+          {products.map((product,index) => (
+            <div key={index} className={styles.productCard}>
               <Image src={product.image} height={100} width={100} />
               <div>
                 <h3>{product.name}</h3>
@@ -133,8 +133,8 @@ export default function Page() {
           {/* Top Rated Section */}
           <div className={styles.productSection}>
             <h2>Top Rated</h2>
-            {products.map((product) => (
-            <div className={styles.productCard}>
+            {products.map((product,index) => (
+            <div key={index} className={styles.productCard}>
               <Image src={product.image} height={100} width={100} />
               <div>
                 <h3>{product.name}</h3>
