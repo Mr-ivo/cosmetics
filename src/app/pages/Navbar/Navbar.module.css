@@ -23,6 +23,16 @@
   background-color: #30a7f6;
 
 }
+.four {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  top: 2%;
+  font-size: 1.2rem;
+  padding: 3px;
+  position:absolute;
+  margin-left: 10px;
+}
 
 .header.hide {
   top: -100px; /* Adjust this value as necessary */

@@ -1,10 +1,11 @@
 'use client';
-import { useCart } from '../../context/CartContext';
-import styles from '../cart/Cart.module.css'; 
+import styles from '../cart/page.module.css'; 
 import Image from 'next/image';
+import { useCart } from '../context/CartContext';
 
-export default function Cart() {
+export default function Page() {
   const { cartItems, removeFromCart, getTotalPrice } = useCart();
+console.log(cartItems);
 
   // Log cart items to verify they're passed to the components
   console.log("Cart Items in UI:", cartItems);
@@ -29,8 +30,8 @@ export default function Cart() {
               />
               <div className={styles.cartItemDetails}>
                 <h3>{item.name}</h3>
-                <p>Price: ${item.price}</p>
-                <p className={styles.oldPrice}>Old Price: ${item.oldPrice}</p>
+                <p>Price: CAF{item.price}</p>
+                <p className={styles.oldPrice}>Old Price: CAF{item.oldPrice}</p>
                 <button
                   className={styles.removeButton}
                   onClick={() => removeFromCart(item.id)}
@@ -43,7 +44,7 @@ export default function Cart() {
 
           {/* Total Price */}
           <div className={styles.totalPrice}>
-            <h3>Total Price: ${getTotalPrice().toFixed(2)}</h3>
+            <h3>Total Price: CAF{getTotalPrice().toFixed(2)}</h3>
           </div>
         </div>
       )}
